@@ -5,10 +5,10 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity : AppCompatActivity(), ChessBoardAdapter.CallBack, ChessBoard.ChesboardCallBack {
+class MainActivity : AppCompatActivity(), ChessBoard.ChessBoardAdapter.CallBack, ChessBoard.ChesboardCallBack {
 
     val chessBoard = ChessBoard(this)
-    val adapter = ChessBoardAdapter(chessBoard.arrayCell, this)
+    val adapter = ChessBoard.ChessBoardAdapter(chessBoard.arrayCell, this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
